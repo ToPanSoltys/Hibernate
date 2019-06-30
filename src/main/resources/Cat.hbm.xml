@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.sda.db">
+
+    <class name="com.sda.db.Cat" table="cats" >
+        <id name="id" column="id" access="field">
+            <generator class="identity"/>
+        </id>
+
+
+        <property name="name" type="string" access="field" column="name"/>
+        <property name="birthYear" type="integer" access="field" column="birth_year"/>
+        <property name="colour" type="string" access="field" column="colour"/>
+
+
+    </class>
+</hibernate-mapping>
